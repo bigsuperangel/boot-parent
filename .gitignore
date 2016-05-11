@@ -1,5 +1,9 @@
 /target/
 *.class
+/boot-pojo/target/
+/boot-dao/target/
+/boot-service/target/
+/boot-web/target/
 
 # Package Files #
 *.jar
