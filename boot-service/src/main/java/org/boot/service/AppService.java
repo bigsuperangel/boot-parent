@@ -14,4 +14,8 @@ public class AppService
     public App getByUserid(long userId){
     	return appDao.getByUserid(userId);
     }
+    
+    public int insertApp(App app){
+    	return appDao.insertApp(app);
+    }
 }

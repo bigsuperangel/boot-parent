@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8080
 ---
 spring:
   datasource:
@@ -16,6 +16,8 @@ my:
    servers:
       - dev.bar.com
       - foo.bar.com
+   name: test
+   pwd: 123456
 ---
 endpoints:
   shutdown:

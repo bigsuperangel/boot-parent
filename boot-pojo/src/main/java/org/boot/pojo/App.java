@@ -14,6 +14,13 @@ public class App {
 		this.name = name;
 	}
 
+	public App(String name) {
+		super();
+		this.name = name;
+	}
+
+
+
 	public Long getUserId() {
 		return userId;
 	}

@@ -20,4 +20,8 @@ public class AppDao
     			(rs, rowNum) -> new App(rs.getLong("userId"), rs.getString("name"))
     	);
     }
+    
+    public int insertApp(App app){
+    	return jdbcTemplate.update("insert into app(name) values(?)", app.getName());
+    }
 }

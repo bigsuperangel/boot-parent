@@ -19,6 +19,8 @@ public class AppController {
 	@RequestMapping("/query")
 	public App query(Long userId){
 		System.out.println(new Gson().toJson(config.getServers()));
+		System.out.println(config.getName());
+		System.out.println(config.getPwd());
 		return appService.getByUserid(1L);
 	}
 }
